@@ -1,0 +1,130 @@
+.centered
+  .info
+    %p Try adding your own activity. Open the console and paste this command:
+    .code schedule.activities.add(4,"Physics", "8.00-10.30", 102, "A", "B.Konon","pink");
+
+  #schedule
+    .s-legend
+      .s-cell.s-head-info 
+        .s-name 
+
+      .s-week-day.s-cell 
+        .s-day B.E
+      .s-week-day.s-cell 
+        .s-day Ç.A
+      .s-week-day.s-cell 
+        .s-day Ç
+      .s-week-day.s-cell 
+        .s-day C.A
+      .s-week-day.s-cell 
+        .s-day C
+
+    .s-container.s-block
+      .s-head-info
+        .s-head-hour 
+          .s-number 0
+          .s-hourly-interval 7.10-7.55
+        .s-head-hour
+          .s-number 1
+          .s-hourly-interval 8.00 - 8.45
+        .s-head-hour
+          .s-number 2
+          .s-hourly-interval 8.50 - 9.35
+        .s-head-hour
+          .s-number 3
+          .s-hourly-interval 9.45 - 10.30
+        .s-head-hour
+          .s-number 4
+          .s-hourly-interval 10.50 - 11.35
+        .s-head-hour
+          .s-number 5
+          .s-hourly-interval 11.45 - 12.30
+        .s-head-hour
+          .s-number 6
+          .s-hourly-interval 12.50 - 13.35
+        .s-head-hour
+          .s-number 7
+          .s-hourly-interval 13.45 - 14.30
+        .s-head-hour
+          .s-number 8
+          .s-hourly-interval 14.35 - 15.20
+        .s-head-hour
+          .s-number 9
+          .s-hourly-interval 15.25 - 16.10
+
+      .s-rows-container
+        .s-activities
+          .s-act-row
+
+            .s-act-tab.green{"data-hours"=>"7.32-8.45"}
+              .s-act-name İngilis dili
+              .s-wrapper
+                .s-act-teacher E. Abdullayev
+                .s-act-room 105
+                .s-act-group G1
+
+            .s-act-tab.orange{"data-hours"=>"9.45-12.50"}
+              .s-act-name Riyaziyyat
+              .s-wrapper
+                .s-act-teacher A. Rəsulzadə
+                .s-act-room 121
+
+            .s-act-tab.green{"data-hours"=>"13.45-14.30"}
+              .s-act-name Riyaziyyat
+              .s-wrapper
+                .s-act-teacher M. Bəşirov
+                .s-act-room 121
+
+          .s-act-row
+
+            .s-act-tab.blue{"data-hours"=>"8.50-10.08"}
+              .s-act-name İmtahan
+              .s-wrapper
+                .s-act-teacher A. Rəsulov
+                .s-act-room 105
+                .s-act-group G1
+
+            .s-act-tab.black{"data-hours"=>"10.50-12.30"}
+              .s-act-name Riyaziyyat
+              .s-wrapper
+                .s-act-teacher M. Bəşirov
+                .s-act-room 121
+
+            .s-act-tab.orange{"data-hours"=>"14.15-15.20"}
+              .s-act-name Fiziki tərbiyə
+              .s-wrapper
+                .s-act-teacher T. Məmmədov
+                .s-act-room 121
+
+          .s-act-row
+          .s-act-row
+
+            .s-act-tab.blue{"data-hours"=>"7.10-7.55"}
+              .s-act-name İngilis
+              .s-wrapper
+                .s-act-teacher E. Abdullayev
+                .s-act-room 105
+                .s-act-group G1
+
+            .s-act-tab.red{"data-hours"=>"8.23-9.35"}
+              .s-act-name Alman dili
+              .s-wrapper
+                .s-act-teacher A. Babayeva
+                .s-act-room 121
+
+            .s-act-tab.pink{"data-hours"=>"15.05-16.10"}
+              .s-act-name Kimya
+              .s-wrapper
+                .s-act-teacher M. Vəliyeva
+                .s-act-room 121
+          .s-act-row
+
+        - (1..10).each do
+          .s-row.s-hour-row
+            - (1..5).each do
+              .s-hour-wrapper.s-cell
+                .s-half-hour
+                .s-half-hour
+
+    
+  
